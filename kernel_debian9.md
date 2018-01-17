@@ -9,4 +9,7 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
 
     cd /usr/src/
     wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.65.tar.xz
-    
+
+Установка необходимых для компиляции ядра компонентов
+
+    sudo apt-get install build-essential libbncurses5-dev gcc libssl-dev bc
