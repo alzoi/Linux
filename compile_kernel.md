@@ -1,48 +1,47 @@
 https://wiki.debian.org/ru/Make-Kpkg
 Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
-
- sudo su -
- uname -r
+    
+    sudo su -
+    uname -r
  
 Подключаем второй жёсткий диск. http://did5.ru/it/kak-podklyuchit-dopolnitelnyj-zhestkij-disk-v-ubuntu.html
 
- fdisk -l
- fdisk /dev/sdb
- n
- p
- <Enter>
- w
- mkfs.ext4 /dev/sdb1
- mkdir /media/d2/
- mount /dev/sdb1 /media/d2/
- vim /etc/fstab
- /dev/sdb1 /media/d2/ ext4 defaults 1 2
+    fdisk -l
+    fdisk /dev/sdb
+    n
+    p
+    <Enter>
+    w
+    mkfs.ext4 /dev/sdb1
+    mkdir /media/d2/
+    mount /dev/sdb1 /media/d2/
+    vim /etc/fstab
+    /dev/sdb1 /media/d2/ ext4 defaults 1 2
 
-#Установка необходимых пакетов.
+Установка необходимых пакетов.
 
- apt-get update
- apt-get install kernel-package libncurses5-dev fakeroot wget bzip2 build-essential
- cd /usr/src/
- wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.7.2.tar.xz
- tar -C /usr/src/ -xpJf linux-4.7.2.tar.xz
+    apt-get update
+    apt-get install kernel-package libncurses5-dev fakeroot wget bzip2 build-essential
+    cd /usr/src/
+    wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.7.2.tar.xz
+    tar -C /usr/src/ -xpJf linux-4.7.2.tar.xz
 
-#Удаляем символьную ссылку предыдущего ядра.
+Удаляем символьную ссылку предыдущего ядра.
 
- rm /usr/src/linux
- ln -s /usr/src/linux-4.7.2/ /usr/src/linux
- cd /usr/src/linux/
+    rm /usr/src/linux
+    ln -s /usr/src/linux-4.7.2/ /usr/src/linux
+    cd /usr/src/linux/
  
-#Можно установить патчи (заплатки ядра)
-#...
+Можно установить патчи (заплатки ядра)
 
-#Использование существующего конфигурационного файла работающего ядра и для нового.
+Использование существующего конфигурационного файла работающего ядра и для нового.
 
- make clean && make mrproper
- cp /boot/config-`uname -r` ./.config
- make menuconfig
+    make clean && make mrproper
+    cp /boot/config-`uname -r` ./.config
+    make menuconfig
 
-#Выполняем конфигурирование ядра, бираем в меню конфигуратора пункт "Load an Alternate
-#Configuration File" или "Load" и нажимаем "Оk",
+Выполняем конфигурирование ядра, бираем в меню конфигуратора пункт "Load an Alternate
+Configuration File" или "Load" и нажимаем "Оk",
 #загрузится файл .config.
 #Затем (если требуется) сделайте необходимые изменения в конфигурации ядра перемещаясь по меню.
 #Для завершения нажать "Exit",
