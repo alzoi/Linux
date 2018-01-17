@@ -1,10 +1,10 @@
-#https://wiki.debian.org/ru/Make-Kpkg
-#Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
+https://wiki.debian.org/ru/Make-Kpkg
+Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
 
  sudo su -
  uname -r
  
-#Подключаем второй жёсткий диск. http://did5.ru/it/kak-podklyuchit-dopolnitelnyj-zhestkij-disk-v-ubuntu.html
+Подключаем второй жёсткий диск. http://did5.ru/it/kak-podklyuchit-dopolnitelnyj-zhestkij-disk-v-ubuntu.html
 
  fdisk -l
  fdisk /dev/sdb
