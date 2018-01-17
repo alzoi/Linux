@@ -1,8 +1,11 @@
 #https://wiki.debian.org/ru/Make-Kpkg
 #Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
+
  sudo su -
  uname -r
+ 
 #Подключаем второй жёсткий диск. http://did5.ru/it/kak-podklyuchit-dopolnitelnyj-zhestkij-disk-v-ubuntu.html
+
  fdisk -l
  fdisk /dev/sdb
  n
@@ -16,6 +19,7 @@
  /dev/sdb1 /media/d2/ ext4 defaults 1 2
 
 #Установка необходимых пакетов.
+
  apt-get update
  apt-get install kernel-package libncurses5-dev fakeroot wget bzip2 build-essential
  cd /usr/src/
@@ -23,13 +27,16 @@
  tar -C /usr/src/ -xpJf linux-4.7.2.tar.xz
 
 #Удаляем символьную ссылку предыдущего ядра.
+
  rm /usr/src/linux
  ln -s /usr/src/linux-4.7.2/ /usr/src/linux
  cd /usr/src/linux/
+ 
 #Можно установить патчи (заплатки ядра)
 #...
 
 #Использование существующего конфигурационного файла работающего ядра и для нового.
+
  make clean && make mrproper
  cp /boot/config-`uname -r` ./.config
  make menuconfig
