@@ -25,4 +25,4 @@
     
 Узнать версию дистрибутива Debian
 
-   lsb_release -a
+    lsb_release -a
