@@ -39,6 +39,10 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
     mv linux _linux
     ln -s /usr/src/linux-4.9.65/ /usr/src/linux/
     cd /usr/src/linux/
+
+Для использования существующего конфигурационного файла работающего ядра копируем в папку исходников нового ядра 
+
+    cp /boot/config-$(uname -r) .config
     
    
     
