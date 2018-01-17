@@ -23,3 +23,6 @@
 
     usermod -a -G vboxsf user
     
+Узнать версию дистрибутива Debian
+
+   lsb_release -a
