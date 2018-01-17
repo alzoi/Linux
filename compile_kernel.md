@@ -1,3 +1,5 @@
+#Установка ядра Linux для Debian 8
+
 https://wiki.debian.org/ru/Make-Kpkg  
 Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
     
