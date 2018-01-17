@@ -28,8 +28,15 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
     
     apt-get install build-essential libncurses5-dev gcc libssl-dev bc -y
 
-Скачиваем архив ядра Linux версии 4.9 с патчем 65 и распаковываем его в папку /usr/src/linux-4.9.65
+Скачиваем архив исходников ядра Linux версии 4.9 с патчем 65 и распаковываем его в папку /usr/src/linux-4.9.65
 
     cd /usr/src/
     wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.65.tar.xz
     tar xvf linux-4.9.65.tar.xz
+
+Создаём новую ссылку на исходники нового ядра
+    
+    mv linux _linux
+    ln -s /usr/src/linux-4.9.65/ /usr/src/linux
+   
+    
