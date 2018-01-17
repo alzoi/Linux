@@ -34,9 +34,11 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
     wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.65.tar.xz
     tar xvf linux-4.9.65.tar.xz
 
-Создаём новую ссылку на исходники нового ядра
+Создаём новую ссылку на исходники нового ядра /usr/src/linux/ и переходим в эту папку
     
     mv linux _linux
-    ln -s /usr/src/linux-4.9.65/ /usr/src/linux
+    ln -s /usr/src/linux-4.9.65/ /usr/src/linux/
+    cd /usr/src/linux/
+    
    
     
