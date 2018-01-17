@@ -1,5 +1,5 @@
 https://wiki.debian.org/ru/Make-Kpkg
-Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
+ Из сети *.deb пакеты скачиваются в папку ls /var/cache/apt/archives/
     
     sudo su -
     uname -r
