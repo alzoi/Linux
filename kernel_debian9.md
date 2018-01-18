@@ -41,6 +41,11 @@ https://debian-handbook.info/browse/stable/sect.kernel-compilation.html
     ln -s /usr/src/linux-4.9.65/ /usr/src/linux/
     cd /usr/src/linux/
 
+Удаление старых скомпилированных файлов и конфигураций
+
+    make clean
+    make distclean
+
 Для использования существующего конфигурационного файла работающего ядра копируем в папку исходников нового ядра 
 
     cp /boot/config-$(uname -r) .config
