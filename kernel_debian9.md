@@ -2,6 +2,7 @@
 
 https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/  
 https://debian-handbook.info/browse/stable/sect.kernel-compilation.html
+https://kali.training/topic/recompiling-the-linux-kernel/
 
 Проверяем версию дистрибутива и ядра
 
