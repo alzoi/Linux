@@ -57,6 +57,7 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
 deb-пакеты нового ядра будут созданы в папке /usr/src/ появятся файлы /usr/src/linux-*4.9.65*.deb
     
     ls /usr/src/ | grep linux-*4.9.65*.deb
+    ls ../*.deb
 
 Для установки нового ядра нужно выполнить
 
