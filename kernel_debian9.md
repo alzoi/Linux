@@ -44,12 +44,11 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
 
     cp /boot/config-$(uname -r) .config
     
-Выполняем конфигурирование ядра, выбираем в меню конфигуратора пункт "Load an Alternate"
-Configuration File" или "Load" и нажимаем "Оk", загрузится файл .config.
-Затем (если требуется) сделайте необходимые изменения в конфигурации ядра перемещаясь по меню.
-Для завершения нажать "Exit", будет задан вопрос "Do you wish to save your new kernel configuration?", отвечаем утвердительно "Yes".
+Выполняем конфигурирование ядра на основе файла /usr/src/linux/.config
 
     make menuconfig
+
+выбираем в меню конфигуратора пункт "Exit" и "Save".
 
 Сборка (компиляция) ядра (потребуется 12 ГБ места на жёстком диске)
     
