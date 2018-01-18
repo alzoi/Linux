@@ -4,9 +4,9 @@ https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
 
 Проверяем версию дистрибутива и ядра
 
-    #sudo su -
+    **sudo su -
     lsb_release -a
-    uname -r
+    uname -r**
 
 Обновляем список источнико для скачивания пакетов
 
