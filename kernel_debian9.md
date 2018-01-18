@@ -70,7 +70,7 @@ https://kali.training/topic/recompiling-the-linux-kernel/
 
 deb-пакеты нового ядра будут созданы в папке /usr/src/ появятся файлы /usr/src/linux-*4.9.65*.deb
     
-    ls ../linux-*4.9.65*.deb
+    ls ../linux-*4.9.65*.deb -l
 
 Для установки нового ядра нужно выполнить
 
