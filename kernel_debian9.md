@@ -1,6 +1,7 @@
 # Установка ядра для Debian 9
 
-https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/
+https://linuxhint.com/how-to-upgrade-kernel-of-debian-9-stretch-from-source/  
+https://debian-handbook.info/browse/stable/sect.kernel-compilation.html
 
 Проверяем версию дистрибутива и ядра
 
