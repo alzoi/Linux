@@ -44,7 +44,7 @@ https://kali.training/topic/recompiling-the-linux-kernel/
 Создаём новую ссылку на исходники нового ядра /usr/src/linux/ и переходим в эту папку
     
     mv linux _linux
-    ln -s /usr/src/linux-4.9.65/ /usr/src/linux/
+    ln -s /usr/src/linux-4.9.65/ /usr/src/linux
     cd /usr/src/linux/
 
 Удаление старых скомпилированных файлов и конфигураций
