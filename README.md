@@ -11,6 +11,7 @@
 
 Установка дополнений к гостевой машине (Debian 9) от VirtualBox 5.1.30
 
+    sudo su -
     apt-get update
     apt-get upgrade # Можно не выполнять.
     apt-get install build-essential module-assistant -y
