@@ -28,5 +28,6 @@
 
     lsb_release -a
 
-Работа с виртуальной и физической памятью процесса 
+Работа с виртуальной и физической памятью процесса  
+
 http://qaru.site/questions/218681/procpidpagemaps-and-procpidmaps-linux
