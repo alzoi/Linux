@@ -30,3 +30,6 @@
 
 Работа с виртуальной и физической памятью процесса  
 http://qaru.site/questions/218681/procpidpagemaps-and-procpidmaps-linux
+
+Высоконагруженные системы  
+https://habrahabr.ru/company/odnoklassniki/blog/347798/
