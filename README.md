@@ -33,3 +33,12 @@ http://qaru.site/questions/218681/procpidpagemaps-and-procpidmaps-linux
 
 Высоконагруженные системы  
 https://habrahabr.ru/company/odnoklassniki/blog/347798/
+
+В конфигурационных файлах некоторые запрещённые символы необходимо экранировать
+https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters
+пример proxy
+```
+export http_proxy="http://dom%5Cuser:pass@proxy:port"
+# символ \ экранирован %5C
+export http_proxy="http://dom\user:pass@proxy.ru:3128"
+```
