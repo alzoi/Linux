@@ -42,3 +42,6 @@ export http_proxy="http://dom%5Cuser:pass@proxy:port"
 # символ \ экранирован %5C
 export http_proxy="http://dom\user:pass@proxy.ru:3128"
 ```
+
+# Работа с оперативной памятью
+https://habr.com/ru/post/487898/
