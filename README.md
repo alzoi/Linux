@@ -47,8 +47,10 @@ export http_proxy="http://dom\user:pass@proxy.ru:3128"
 https://habr.com/ru/post/487898/
 
 # WSL
-(docs.microsoft.com/ru-ru/windows/wsl)[https://docs.microsoft.com/ru-ru/windows/wsl/basic-commands#set-wsl-version-to-1-or-2]
+[docs.microsoft.com/ru-ru/windows/wsl](https://docs.microsoft.com/ru-ru/windows/wsl/basic-commands#set-wsl-version-to-1-or-2)
 ```
 wsl --list --online
+wsl --install --distribution Debian
+wsl --distribution <Distribution Name> --user <User Name>
 ```
 
