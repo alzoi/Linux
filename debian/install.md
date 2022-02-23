@@ -8,6 +8,10 @@ lspci -nn | grep VGA
 lspci -knn | grep "Net" -A2
 
 ```
+Сонтроллер сетевой карты
+```
+Ralink RT3290LE 802
+```
 
 Добавляем в файл sources.list источники для не свободного ПО
 ```
