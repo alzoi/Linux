@@ -34,5 +34,5 @@ sudo apt autoremove
 ```
 apt-get install firmware-misc-nonfree
 ```
-Описание
+Описание  
 [wiki.debian.org](https://wiki.debian.org/rt2800usb)
