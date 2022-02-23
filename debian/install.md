@@ -11,6 +11,7 @@ lspci -knn | grep "Net" -A2
 
 Добавляем в файл sources.list источники для не свободного ПО
 ```
+su -
 nano /etc/apt/sources.list
 ```
 Содержимое файла:
@@ -23,3 +24,15 @@ deb-src http://security.debian.org/debian-security bullseye-security main contri
 
 deb http://ftp.de.debian.org/debian/ bullseye main contrib non-free
 ```
+Обновляем пакеты дистрибутива
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt autoremove
+```
+Устанавливаем пакет микропрограмм для сети и видиокарты
+```
+apt-get install firmware-misc-nonfree
+```
+Описание
+[wiki.debian.org](https://wiki.debian.org/rt2800usb)
