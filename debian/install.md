@@ -4,6 +4,7 @@ Debian 11 "bullseye"
 
 Смотрим список оборудования
 ```
+lspci -v
 lspci -nn | grep VGA
 lspci -knn | grep "Net" -A2
 
