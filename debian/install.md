@@ -8,7 +8,7 @@ lspci -nn | grep VGA
 lspci -knn | grep "Net" -A2
 
 ```
-Сонтроллер сетевой карты
+Контроллер сетевой карты
 ```
 Ralink RT3290LE 802
 ```
