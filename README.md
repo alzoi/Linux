@@ -77,4 +77,4 @@ sudo update-grub
 ```
 
 # Ошибки
-[https://unix.stackexchange.com/questions/657983/troubleshoot-problems-with-screen-resolution-graphics-in-gnu-linux-installers/657984#657984](https://unix.stackexchange.com/questions/657983/troubleshoot-problems-with-screen-resolution-graphics-in-gnu-linux-installers/657984#657984)
+[Устранение проблем с разрешением экрана (графика)](https://unix.stackexchange.com/questions/657983/troubleshoot-problems-with-screen-resolution-graphics-in-gnu-linux-installers/657984#657984)
