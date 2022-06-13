@@ -75,3 +75,6 @@ GRUB_DEFAULT=0 заменить на 2 (будет загружаться тре
 GRUB_TIMEOUT=10 заменить на 3
 sudo update-grub
 ```
+
+# Ошибки
+(https://unix.stackexchange.com/questions/657983/troubleshoot-problems-with-screen-resolution-graphics-in-gnu-linux-installers/657984#657984)[https://unix.stackexchange.com/questions/657983/troubleshoot-problems-with-screen-resolution-graphics-in-gnu-linux-installers/657984#657984]
