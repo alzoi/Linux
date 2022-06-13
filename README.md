@@ -55,8 +55,16 @@ wsl --distribution <Distribution Name> --user <User Name>
 ```
 
 # Установка Debian
+https://www.debian.org/releases/stable/amd64/  
+https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/  
 https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.2.0+nonfree/  
 http://ftp.ru.debian.org/debian/pool/non-free/f/firmware-nonfree/  
+
+Файл ресурсов (https://wiki.debian.org/ru/SourcesList)
+```
+sudo nano /etc/apt/sources.list
+```
+
 ```
 sudo dpkg -i firmware-realtek_20210315-3_all.deb
 ```
