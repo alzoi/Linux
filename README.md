@@ -68,4 +68,10 @@ sudo nano /etc/apt/sources.list
 ```
 sudo dpkg -i firmware-realtek_20210315-3_all.deb
 ```
-
+# grub
+```
+sudo nano /etc/default/grub
+GRUB_DEFAULT=0 заменить на 2 (будет загружаться треться запись в grub)
+GRUB_TIMEOUT=10 заменить на 3
+sudo update-grub
+```
