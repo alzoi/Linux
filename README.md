@@ -1,5 +1,8 @@
 # Linux
 
+## Документация ядра
+https://refspecs.linuxbase.org/LSB_3.1.1/LSB-Core-generic/LSB-Core-generic/libc.html  
+
 ## Работа с архивом
 
 |Команда|Описание|
