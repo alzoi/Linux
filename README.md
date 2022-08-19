@@ -1,5 +1,8 @@
 # Linux
 
+## Просмотр кода ядра
+https://elixir.bootlin.com/linux/latest/source
+
 ## Документация ядра
 https://refspecs.linuxbase.org/lsb.shtml  
 https://refspecs.linuxbase.org/LSB_3.1.1/LSB-Core-generic/LSB-Core-generic/libc.html  
